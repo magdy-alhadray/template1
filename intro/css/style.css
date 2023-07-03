@@ -1,0 +1,129 @@
+ /* Start Variables */
+    :root {
+    --main-color: #eb252b;
+    --transparent-color: #08526d;
+  }
+/* End Variables */
+/* Start Global Rules  */
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+       width: 80%;
+       margin: auto;
+    }
+/* End Global Rules  */
+
+/* Start component  */
+    .line-left {
+        position: relative;
+        font-size: 18px;
+        padding-left: 52px ;
+        text-transform: uppercase;
+    }
+    .line-left::before {
+        content: "";
+        top:calc(50% - 1px) ;
+        left: 0;
+        border: 2px solid var(--main-color);
+        width: 40px;
+        position: absolute;
+    }
+    .main-p {
+        margin: 0;
+        font-size: 19px;
+        text-transform: capitalize;
+        color: #333;
+        line-height: 1.5;
+    } 
+    .btn {
+        width: 200px;
+        height: 48px;
+        font-size: 20px;
+        border: none;
+        text-transform: capitalize;
+        text-align: center;
+        color: #fff;
+    }
+    .btn:hover {
+        opacity: 0.6;
+    }
+/* component  */
+/* Intro  */
+    .landing {
+        height: 100vh;
+        background-size: cover;
+        position: relative;
+       background-image: url(../imgs/intro/intro.jpg);
+    }
+    .landing .text {
+        width: 50%;
+        padding: 50px; 
+        margin: auto 0;
+        height: 100vh;
+    }
+
+    .landing .text h1 {
+        text-transform: capitalize;
+        color:  var(--transparent-color);
+        font-size: 45px;
+    }
+    .landing .text .title {
+        display: block;
+        font-size: 50px;
+        text-transform: capitalize;
+        font-size: 44px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color:var(--main-color);
+    } 
+    .landing .text .main-p {
+        margin-bottom: 50px;
+    } 
+    .landing .text .btn1 {
+        background-color: var(--main-color);
+        margin-right: 17px;
+    }
+    .landing .text .btn2 {
+        background-color: var(--transparent-color);
+    }
+    /* Intro  */
+    .cards {
+        position: relative;
+        top: -25px;
+    }
+    .iteams {
+        display: flex;
+        justify-content: space-between ;
+    }
+    .cards .iteams .item {
+        width: 32%;
+        background-image: url(../imgs/about/about_1.jpg);
+        height: 350px;
+        background-size: cover;
+        padding: 20px;
+    }
+    .cards .item .info {
+        margin-top: 110px;
+        margin-bottom: 10px;
+    }
+    .cards .item .line-left {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .cards .item h2 {
+        text-transform: capitalize;
+        color: var(--transparent-color);
+        font-size: 35px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .cards .item .main-p {
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+    .cards .item .btn1 {
+        background-color: var(--main-color);
+    }
